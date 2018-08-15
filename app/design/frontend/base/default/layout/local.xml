@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<layout>
+    <helloworld_index_index>
+
+
+        <reference name="content">
+            <block type="core/template"  name="bxslider" before="content" template="mycompany/contact/view.phtml" after="breadcrumbs" />
+        </reference>
+
+    <default>
+        <reference name="head">
+            <action method="addJs"><script>bannerslider/jquery.bxslider.min.js</script></action>
+            <action method="addCss"><stylesheet>css/bannerslider/css/jquery.bxslider.css</stylesheet></action>
+        </reference>
+    </default>
+
+
+        <reference name="content">
+            <action method="setTemplate"><template>page/2column.phtml</template></action>
+        </reference>
+        <reference name="content">
+            <block type="helloworld/view" name="helloworld" template="mycompany/contact/view.phtml"/>
+        </reference>
+
+
+
+    </helloworld_index_index>
+
+
+</layout>

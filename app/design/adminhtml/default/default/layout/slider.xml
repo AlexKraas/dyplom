@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <slider_adminhtml_category_index>
+        <reference name="content">
+            <block type="slider/adminhtml_slider" name="category"></block>
+        </reference>
+    </slider_adminhtml_category_index>
+    <slider_adminhtml_image_index>
+        <reference name="content">
+            <block type="slider/adminhtml_slide" name="image"></block>
+        </reference>
+    </slider_adminhtml_image_index>
+
+
+</layout>
